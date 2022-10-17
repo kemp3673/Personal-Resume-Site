@@ -1,0 +1,46 @@
+.carousel {
+  width:75vw;
+  margin: auto;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 1em;
+  width: 1em;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.carousel-control-prev, .carousel-control-next {
+  height: 1em;
+  width: 1em;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+
+  bottom: 2px;
+  top: auto;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: bisque;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.carousel-indicators {
+  margin-bottom: -0.4rem;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #ffffff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.experience {
+  height: 100vh;
+  margin: auto;
+}
