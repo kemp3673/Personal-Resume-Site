@@ -6,7 +6,9 @@ import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 
 export const Nav = styled.nav`
-  background: #000;
+  /* background: #8BE2E2; */
+  /* background: #9A7450; */
+  background: #2E3B52;
   height: 80px;
   //margin-top: -80px;
   display: flex;
