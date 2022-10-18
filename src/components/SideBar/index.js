@@ -1,7 +1,19 @@
 import React from 'react';
 import { SideBarContainer, Icon, CloseIcon, SideBarWrapper, SideBarMenu, SideBarLink } from './SideBarElements';
 
-const SideBar = ({isOpen, toggle}) => {
+const SideBar = ({ isOpen, toggle }) => {
+    const goToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
+    const homeHandler = () => {
+        toggle();
+        goToTop();
+    };
+
     return (
         <SideBarContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -9,24 +21,62 @@ const SideBar = ({isOpen, toggle}) => {
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink to="about" onClick={toggle}>
-                    About Me
+                    <SideBarLink
+                        to="/"
+                        onClick={toggle}
+                        smooth={false}
+                        spy={true}
+                        duration={500}
+                        exact='true'
+                        offset={-80}
+                        onClick={homeHandler}
+                    >
+                        About Me
                     </SideBarLink>
-                    <SideBarMenu>
-                    <SideBarLink to="experience" onClick={toggle}>
-                    Experience
+                    <SideBarLink
+                        to="education"
+                        onClick={toggle}
+                        smooth={false}
+                        spy={true}
+                        duration={500}
+                        exact='true'
+                        offset={-80}
+                    >
+                        Education
                     </SideBarLink>
-                </SideBarMenu>
-                <SideBarMenu>
-                    <SideBarLink to="education" onClick={toggle}>
-                    Education
+                    <SideBarLink
+                        to="experience"
+                        onClick={toggle}
+                        smooth={false}
+                        spy={true}
+                        duration={500}
+                        exact='true'
+                        offset={-80}
+                    >
+                        Experience
                     </SideBarLink>
-                </SideBarMenu>
-                <SideBarMenu>
-                    <SideBarLink to="contact" onClick={toggle}>
-                    Contact Me
+                    <SideBarLink
+                        to="employmentHistory"
+                        onClick={toggle}
+                        smooth={false}
+                        spy={true}
+                        duration={500}
+                        exact='true'
+                        offset={-80}
+                    >
+                        Employment History
                     </SideBarLink>
-                </SideBarMenu>
+                    <SideBarLink
+                        to="contact"
+                        onClick={toggle}
+                        smooth={false}
+                        spy={true}
+                        duration={500}
+                        exact='true'
+                        offset={-80}
+                    >
+                        Contact Me
+                    </SideBarLink>
                 </SideBarMenu>
             </SideBarWrapper>
         </SideBarContainer>

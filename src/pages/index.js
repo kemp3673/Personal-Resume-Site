@@ -5,6 +5,8 @@ import Splash from '../components/Splash';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Contact from '../components/Contact';
+import WorkHistory from '../components/WorkHistory';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +23,9 @@ const Home = () => {
       <Splash />
       <Education />
       <Experience />
+      <WorkHistory />
       <Contact />
+      <Footer />
     </>
   );
 }

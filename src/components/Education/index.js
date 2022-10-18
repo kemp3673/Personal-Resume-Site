@@ -1,31 +1,33 @@
 import React from 'react';
-
+import { EducationData } from '../../Data/data.js';
 import HackReactor from '../../images/HackReactor.jpeg';
 import APUS from '../../images/apus.png';
 
-import { EducationContainer, EducationH1, EducationWrapper, EducationCard, EducationIcon, EducationH2, EducationP } from './educationElements';
+import { EducationContainer, EducationH1, EducationWrapper, EducationCard, EducationIcon, EducationH2, EducationP, EducationContent } from './educationElements';
 
 
 const Education = () => {
   return (
     <>
-      <EducationContainer id="education">
-        <EducationH1>Education</EducationH1>
-        <EducationWrapper>
-          <EducationCard>
-            <EducationIcon src={HackReactor} />
-            <EducationH2>Hack Reactor</EducationH2>
-            <EducationP>Advanced Software Engineering</EducationP>
-            <EducationP>Graduated: August 2022</EducationP>
-          </EducationCard>
-          <EducationCard>
-            <EducationIcon src={APUS} />
-            <EducationH2>American Public University Systems</EducationH2>
-            <EducationP>B.A.S. Technical Management: Project Management</EducationP>
-            <EducationP>Graduated: February 2019</EducationP>
-          </EducationCard>
-        </EducationWrapper>
-      </EducationContainer>
+    <EducationContainer id="education">
+    <EducationContent>
+    <EducationH1>Education</EducationH1>
+    </EducationContent>
+      <EducationContent>
+      {EducationData.map((education) => {
+        return (
+          <EducationWrapper key={`${education.degree}${education.year}`}>
+            <EducationCard>
+              <EducationIcon src={education.image} />
+              <EducationH2>{education.school}</EducationH2>
+              <EducationP>{education.degree}</EducationP>
+              <EducationP>{education.year}</EducationP>
+            </EducationCard>
+          </EducationWrapper>
+        )
+      })}
+      </EducationContent>
+    </EducationContainer>
     </>
   )
 }

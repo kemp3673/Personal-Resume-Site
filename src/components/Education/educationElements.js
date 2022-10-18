@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 export const EducationContainer = styled.div`
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0 30px;
+  //padding: 0 30px;
   height: 100vh;
   top: -80px;
   position: relative;
@@ -23,14 +21,14 @@ export const EducationContainer = styled.div`
 `;
 
 export const EducationContent = styled.div`
+  margin: 0 auto;
   z-index: 3;
   max-width: 1200px;
   max-height: 1000px
   position: absolute;
-  padding: 8px 24px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
 `;
 
 export const EducationH1 = styled.h1`
@@ -50,64 +48,76 @@ export const EducationH1 = styled.h1`
 `;
 
 export const EducationP = styled.p`
-  margin-top: 24px;
-  color: #fff;
-  font-size: 1.5em;
+  margin-top: 10px;
+  color: black;
+  font-size: 18px;
   text-align: center;
   max-width: 800px;
   max-height: 400px;
-  text-shadow: 2px 2px 4px black;
 
   @media screen and (max-width: 768px) {
-    font-size: 1.2em;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 1em;
+    font-size: 14px;
   }
 `;
 
 export const EducationWrapper = styled.div`
-  display: grid;
-  z-index: 1;
-  height: 100vh;
-  width: 100%;
-  max-width: 1000px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 50px;
-  justify-content: center;
+  z-index: 3;
+  height: 340px;
+  flex-basis: 20%;
+  -ms-flex: auto;
+  width: 300px;
+  position: relative;
+  margin: 10px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    height: 280px;
+    width: 260px;
+    margin: 5px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    height: 240px;
+    width: 220px;
+    margin: 5px;
+  }
 `;
 
 export const EducationCard = styled.div`
   background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  text-align: center;
   align-items: center;
   border-radius: 10px;
-  max-height: 340px;
-  padding: 30px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease-in-out;
+  height: 340px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 2px 2px 3px gray;
 
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+  @media screen and (max-width: 768px) {
+    height: 280px;
+    width: 260px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    height: 240px;
+    width: 220px;
   }
 `;
 
 export const EducationIcon = styled.img`
-  height: 160px;
-  width: 160px;
+  max-height: 160px;
+  max-width: 160px;
   margin-bottom: 10px;
 `;
 
 export const EducationH2 = styled.h2`
+  font-weight: bold;
   font-size: 1em;
   margin-bottom: 10px;
 `;
-
-
-

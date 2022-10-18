@@ -1,5 +1,6 @@
 .carousel {
-  width:75vw;
+  max-height: 950px;
+  width: 100%;
   margin: auto;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -41,10 +42,12 @@
 }
 
 .carousel-item {
-  transition: transform 2.6s ease-in-out;
+  transition: transform 1.6s ease-in-out;
+  width: 100%;
+  max-height: 900px;
 }
 
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
-  transition: opacity 0s 2.6s;
+  transition: opacity 0s 1.6s;
 }

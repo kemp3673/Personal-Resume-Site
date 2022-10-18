@@ -68,6 +68,7 @@ export const SplashP = styled.p`
 `;
 
 export const SplashProfileImage = styled.img`
+  margin-top: 24px;
   width: 25vw;
   max-width: 250px;
   min-width: 150px;
