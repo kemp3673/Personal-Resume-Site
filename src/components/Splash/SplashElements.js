@@ -17,7 +17,8 @@ export const SplashContainer = styled.div`
     right: 0;
     bottom: 0;
     /* background: #2E3B52; */
-    background: linear-gradient(45deg, #437C8B 50%, #8BE2E2 100%);
+    /* linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
+    background: linear-gradient(45deg, rgba(255,0,0,0) 50%, rgba(23, 29, 191,1) 100%);
     opacity: 0.8;
     z-index: 2;
   }
@@ -68,7 +69,8 @@ export const SplashP = styled.p`
 `;
 
 export const SplashProfileImage = styled.img`
-  margin-top: 24px;
+
+  margin-top: 40px;
   width: 25vw;
   max-width: 250px;
   min-width: 150px;
@@ -98,3 +100,17 @@ export const SplashLink = styled.a`
     transition: 0.3s ease-in-out;
   }
 `;
+
+export const BackgroundVideo = styled.video`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* width: auto;
+  height: auto; */
+  z-index: -1;
+  -o-object-fit: cover;
+  object-fit: cover;
+`;
+
