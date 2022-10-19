@@ -15,7 +15,7 @@ export const ExperienceContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: black;
+    background: linear-gradient(180deg, #01030F 10%, #585671 75%);
   }
 `;
 

@@ -15,8 +15,7 @@ export const ContactContainer = styled.div`
     left: 0;
     right: 0;
     bottom: -80px;
-    background: linear-gradient(45deg, #437C8B 50%, #8BE2E2 100%);
-    opacity: 0.8;
+    background: linear-gradient(180deg, #6A96A2 10%, #2E3B52);
     z-index: 1;
 `;
 

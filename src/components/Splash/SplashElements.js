@@ -18,8 +18,7 @@ export const SplashContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(255,0,0,0) 50%, rgba(23, 29, 191,1) 100%);
-    opacity: 0.8;
+    background: linear-gradient(180deg, rgba(255,0,0,0) 60%, #000001 70%);
     z-index: 2;
   }
 `;

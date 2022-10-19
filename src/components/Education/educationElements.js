@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const EducationContainer = styled.div`
   align-items: center;
-  height: fit-content; min-height: 100vh;
+  height: max-content; min-height: 100vh;
   top: -80px;
   position: relative;
   z-index: 3;
@@ -13,15 +13,16 @@ export const EducationContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, #d6cbbf 0%, #997a59 100%);
-    opacity: 0.8;
+
+    background: linear-gradient(180deg, #000001 0%, #01030F 90%);
     z-index: 1;
   }
 `;
 
 export const EducationContent = styled.div`
+  height: fit-content;
   margin: 0 auto;
-  z-index: 3;
+  z-index: 2;
   max-width: 1200px;
   position: relative;
   display: flex;
@@ -93,14 +94,14 @@ export const EducationCard = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     font-size: 18px;
-    height: 280px;
+    height: fit-content;
     width: 260px;
   }
 
   @media screen and (max-width: 480px) {
     flex-direction: column;
     font-size: 14px;
-    height: 240px;
+    height: fit-content;
     width: 220px;
   }
 `;
@@ -110,6 +111,7 @@ export const EducationIcon = styled.img`
     max-width: 260px;
   margin-bottom: 10px;
   box-shadow: 2px 2px 4px black;
+  margin-top: 10px;
 
   @media screen and (max-width: 768px) {
     max-height: 280px;
