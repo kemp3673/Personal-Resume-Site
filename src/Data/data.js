@@ -1,7 +1,7 @@
 import HackReactor from '../images/HackReactor.jpeg';
 import APUS from '../images/apus.png';
 import USAF from '../images/USAF.png';
-import Boyle from '../images/Boyle.jpeg';
+import Boyle from '../images/boyle.jpeg';
 
 
 export const EducationData = [
