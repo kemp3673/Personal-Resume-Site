@@ -7,7 +7,7 @@ const app = express();
 
 // Middleware
 app.use(cors())
-app.use(compression())
+app.use(compression(9))
 
 let PORT = process.env.PORT || 3000;
 
