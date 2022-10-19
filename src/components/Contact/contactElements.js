@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 30px;
@@ -25,8 +26,9 @@ export const ContactContainer = styled.div`
 export const ContactContent = styled.div`
   z-index: 3;
   max-width: 1200px;
-  max-height: 1000px
-  position: absolute;
+  max-height: 1000px;
+  width: 100%;
+  position: relative;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
@@ -63,18 +65,19 @@ export const ContactP = styled.p`
 `;
 
 export const ContactWrapper = styled.div`
-  display: grid;
+  //display: flex;
   z-index: 1;
-  height: 100vh;
+  /* height: 50vh; */
   width: 100%;
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 50px;
   justify-content: center;
+  text-align: center;
 `;
 
-export const ContactCard = styled.div`
+/* export const ContactCard = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -85,20 +88,14 @@ export const ContactCard = styled.div`
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
     0 1px 3px rgba(0, 0, 0, 0.2);
-`;
-
-//ANCHOR DELETE THIS SECTION AFTER YOU ARE DONE WITH IT
-// export const ContactIcon = styled.img`
-//   height: 160px;
-//   width: 160px;
-//   margin-bottom: 10px;
-// `;
+`; */
 
 export const ContactH2 = styled.h2`
 color: #fff;
   font-size: 36px;
   text-align: center;
   text-shadow: 2px 2px 4px black;
+  margin-top: 10px;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -120,7 +117,7 @@ export const ContactProfileImage = styled.img`
 
 export const ContactLogo = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 3rem;
   margin-top: 24px;
@@ -137,6 +134,27 @@ export const ContactLink = styled.a`
   &:hover {
     color: #01bf71;
     transition: 0.3s ease-in-out;
+  }
+`;
+
+export const ContactDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  flew-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  width: 75%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    font-size: 14px;
   }
 `;
 

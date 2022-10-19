@@ -10,11 +10,31 @@ const Footer = () => {
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>About Me</FooterLinkTitle>
-                <FooterLink to='/'>How it works</FooterLink>
-                <FooterLink to='/'>Testimonials</FooterLink>
-                <FooterLink to='/'>Careers</FooterLink>
-                <FooterLink to='/'>Investors</FooterLink>
-                <FooterLink to='/'>Terms of Service</FooterLink>
+                <FooterLink
+                  to="education"
+                  smooth={false}
+                  spy={true}
+                  duration={500}
+                  exact='true'
+                  offset={-80}
+                >Education</FooterLink>
+                <FooterLink
+                  to="experience"
+                  smooth={false}
+                  spy={true}
+                  duration={500}
+                  exact='true'
+                  offset={-80}
+                >Experience</FooterLink>
+                <FooterLink
+                  to="employmentHistory"
+                  smooth={false}
+                  spy={true}
+                  duration={500}
+                  exact='true'
+                  offset={-80}
+                >Employment History</FooterLink>
+                <FooterLink href=''>Additional Websites Created</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>

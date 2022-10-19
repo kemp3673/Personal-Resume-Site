@@ -4,7 +4,9 @@ import styled from 'styled-components'
 export const HistoryContainer = styled.div`
   align-items: center;
   //padding: 0 30px;
-  height: 100vh;
+  /* height: 100vh; */
+  min-height: 100vh;
+  overflow: hidden;
   top: -80px;
   position: relative;
   z-index: 3;
@@ -29,6 +31,7 @@ export const HistoryContent = styled.div`
   position: absolute;
   display: flex;
   flex-flow: row wrap;
+  flex-shrink: 0;
   justify-content: center;
 `;
 
@@ -82,9 +85,10 @@ export const HistoryCard = styled.div`
   text-align: center;
   align-items: center;
   border-radius: 10px;
-  height: 380px;
-  width: 500px;
-  padding: 15px;
+  height: fit-content;
+  width: 200;
+  //margin: 50px;
+  padding: 10px;
   box-shadow: 2px 2px 3px gray;
 
   @media screen and (max-width: 768px) {
@@ -97,6 +101,7 @@ export const HistoryIcon = styled.img`
   max-height: 160px;
   max-width: 160px;
   margin-bottom: 10px;
+  border-radius: 75%;
 `;
 
 export const HistoryH2 = styled.h2`

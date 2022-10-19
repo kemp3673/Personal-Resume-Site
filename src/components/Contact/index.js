@@ -2,7 +2,7 @@ import React from 'react';
 import ProfileImage from '../../images/profile_pic.jpeg';
 import { FaGithub } from 'react-icons/fa';
 import { GrLinkedin } from 'react-icons/gr';
-import { ContactContainer, ContactH1, ContactWrapper, ContactContent, ContactH2, ContactP, ContactLogo, ContactLink, ContactProfileImage } from './contactElements';
+import { ContactContainer, ContactH1, ContactWrapper, ContactContent, ContactH2, ContactP, ContactLogo, ContactLink, ContactProfileImage, ContactDiv } from './contactElements';
 
 
 const Contact = () => {
@@ -10,13 +10,19 @@ const Contact = () => {
         <>
             <ContactContainer id="contact">
                 <ContactWrapper>
+                    <ContactH1>Contact Me</ContactH1>
+                    <ContactProfileImage src={ProfileImage} />
+                </ContactWrapper>
+                <ContactWrapper>
                     <ContactContent>
-                        <ContactH1>Contact Me</ContactH1>
-                        <ContactProfileImage src={ProfileImage} />
-                        <ContactH2>Phone</ContactH2>
-                        <ContactP>(218) 770-3673</ContactP>
-                        <ContactH2>Email</ContactH2>
-                        <ContactP>nicholas.kempkes@gmail.com</ContactP>
+                        <ContactDiv>
+                            <ContactH2>Phone</ContactH2>
+                            <ContactP>(218) 770-3673</ContactP>
+                        </ContactDiv>
+                        <ContactDiv>
+                            <ContactH2>Email</ContactH2>
+                            <ContactP>nicholas.kempkes@gmail.com</ContactP>
+                        </ContactDiv>
                         <ContactH2>Websites</ContactH2>
                         <ContactLogo>
                             <ContactLink href="https://github.com/kemp3673"><FaGithub /></ContactLink>

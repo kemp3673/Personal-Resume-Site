@@ -33,7 +33,8 @@ export const NavLogo = styled(LinkR)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  /* font-family: 'GameOver'; */
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
@@ -68,7 +69,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  margin-right: -15px;
+  margin-top: 1rem;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -82,6 +84,8 @@ export const NavLinks = styled(LinkS)`
   color: #fff;
   display: flex;
   align-items: center;
+  /* font-family: 'GameOver'; */
+  font-size: 1.5rem;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
