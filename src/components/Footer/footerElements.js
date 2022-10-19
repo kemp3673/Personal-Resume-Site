@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 export const FooterContainer = styled.div`
   background-color: #101522;
-
+  height: fit-content; min-height: 20vh;
 `;
 
 export const FooterWrap = styled.div`

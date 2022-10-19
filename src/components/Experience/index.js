@@ -17,8 +17,8 @@ function Experience() {
 
   return (
     <>
-        <ExperienceContainer id="experience">
-            <ExperienceContent>
+      <ExperienceContainer id="experience">
+        <ExperienceContent>
           <ExperienceH1>Experience</ExperienceH1>
           <Carousel className='carousel-fade' activeIndex={index} onSelect={handleSelect} >
             <Carousel.Item>
@@ -50,8 +50,8 @@ function Experience() {
               />
             </Carousel.Item>
           </Carousel>
-          </ExperienceContent>
-        </ExperienceContainer>
+        </ExperienceContent>
+      </ExperienceContainer>
     </>
   );
 }

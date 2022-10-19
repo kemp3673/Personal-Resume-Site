@@ -8,6 +8,7 @@ export const SplashContainer = styled.div`
   padding: 0 30px;
   top: -80px;
   height: 100vh;
+  min-height: 850px;
   position: relative;
   z-index: 1;
   :before {
@@ -17,8 +18,6 @@ export const SplashContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    /* background: #2E3B52; */
-    /* linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
     background: linear-gradient(45deg, rgba(255,0,0,0) 50%, rgba(23, 29, 191,1) 100%);
     opacity: 0.8;
     z-index: 2;
@@ -28,8 +27,7 @@ export const SplashContainer = styled.div`
 export const SplashContent = styled.div`
   z-index: 3;
   max-width: 1200px;
-  max-height: 1000px
-  position: absolute;
+  position: relative;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
@@ -38,12 +36,12 @@ export const SplashContent = styled.div`
 
 export const SplashH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
+  font-size: 40px;
   text-align: center;
   text-shadow: 2px 2px 4px black;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   @media screen and (max-width: 480px) {
@@ -54,7 +52,7 @@ export const SplashH1 = styled.h1`
 export const SplashP = styled.p`
   margin-top: 24px;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
   max-width: 800px;
   max-height: 400px;
@@ -71,7 +69,7 @@ export const SplashP = styled.p`
 
 export const SplashProfileImage = styled.img`
 
-  margin-top: 40px;
+  margin-top: 100px;
   width: 25vw;
   max-width: 250px;
   min-width: 150px;
@@ -108,8 +106,6 @@ export const BackgroundVideo = styled.video`
   left: 0;
   width: 100%;
   height: 100%;
-  /* width: auto;
-  height: auto; */
   z-index: -1;
   -o-object-fit: cover;
   object-fit: cover;

@@ -3,7 +3,7 @@ import { EducationData } from '../../Data/data.js';
 import HackReactor from '../../images/HackReactor.jpeg';
 import APUS from '../../images/apus.png';
 
-import { EducationContainer, EducationH1, EducationWrapper, EducationCard, EducationIcon, EducationH2, EducationP, EducationContent, InnerCard } from './educationElements';
+import { EducationContainer, EducationH1, EducationWrapper, EducationCard, EducationIcon, EducationP, EducationContent, InnerCard } from './educationElements';
 
 
 const Education = () => {
@@ -19,7 +19,6 @@ const Education = () => {
           <EducationWrapper key={`${education.degree}${education.year}`}>
             <EducationCard>
               <EducationIcon src={education.image} />
-              {/* <EducationH2>{education.school}</EducationH2> */}
               <InnerCard>
                 <EducationP>{education.degree}</EducationP>
                 <EducationP>{education.year}</EducationP>

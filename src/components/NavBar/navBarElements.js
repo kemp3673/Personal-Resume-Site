@@ -6,11 +6,8 @@ import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 
 export const Nav = styled.nav`
-  /* background: #8BE2E2; */
-  /* background: #9A7450; */
   background: #2E3B52;
   height: 80px;
-  //margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +34,6 @@ export const NavLogo = styled(LinkR)`
   font-size: 1.8rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
   &:hover {

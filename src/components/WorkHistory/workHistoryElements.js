@@ -3,10 +3,8 @@ import styled from 'styled-components'
 
 export const HistoryContainer = styled.div`
   align-items: center;
-  //padding: 0 30px;
-  /* height: 100vh; */
+  height: auto;
   min-height: 100vh;
-  overflow: hidden;
   top: -80px;
   position: relative;
   z-index: 3;
@@ -27,11 +25,8 @@ export const HistoryContent = styled.div`
   margin: 0 auto;
   z-index: 3;
   max-width: 1200px;
-  max-height: 1000px
-  position: absolute;
-  display: flex;
-  flex-flow: row wrap;
-  flex-shrink: 0;
+  min-height: 100vh;
+  position: relative;
   justify-content: center;
 `;
 
@@ -56,8 +51,6 @@ export const HistoryP = styled.p`
   color: black;
   font-size: 16px;
   text-align: left;
-  /* max-width: 800px;
-  max-height: 200px; */
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -66,11 +59,9 @@ export const HistoryP = styled.p`
 export const HistoryWrapper = styled.div`
   z-index: 3;
   height: 380px;
-  flex-basis: 40%;
-  -ms-flex: auto;
   width: 500px;
   position: relative;
-  margin: 10px;
+  margin: 20px;
   box-sizing: border-box;
 
   @media screen and (max-width: 768px) {
@@ -81,13 +72,12 @@ export const HistoryWrapper = styled.div`
 `;
 
 export const HistoryCard = styled.div`
+  height: fit-content;
+  max-height: 400px;
   background: #fff;
   text-align: center;
   align-items: center;
   border-radius: 10px;
-  height: fit-content;
-  width: 200;
-  //margin: 50px;
   padding: 10px;
   box-shadow: 2px 2px 3px gray;
 
@@ -113,4 +103,11 @@ export const HistoryH2 = styled.h2`
     font-weight: bold;
     font-size: 1.1em;
   }
+`;
+
+export const HistoryItems = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 `;

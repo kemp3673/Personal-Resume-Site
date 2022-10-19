@@ -5,12 +5,9 @@ export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: 100vh;
+  height: fit-content; min-height: 100vh;
   top: -80px;
   position: relative;
-  z-index: 3;
   :before {
     content: '';
     position: absolute;
@@ -26,7 +23,6 @@ export const ContactContainer = styled.div`
 export const ContactContent = styled.div`
   z-index: 3;
   max-width: 1200px;
-  max-height: 1000px;
   width: 100%;
   position: relative;
   padding: 8px 24px;
@@ -65,9 +61,7 @@ export const ContactP = styled.p`
 `;
 
 export const ContactWrapper = styled.div`
-  //display: flex;
   z-index: 1;
-  /* height: 50vh; */
   width: 100%;
   max-width: 1000px;
   margin-right: auto;
@@ -76,19 +70,6 @@ export const ContactWrapper = styled.div`
   justify-content: center;
   text-align: center;
 `;
-
-/* export const ContactCard = styled.div`
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 10px;
-  max-height: 340px;
-  padding: 30px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
-    0 1px 3px rgba(0, 0, 0, 0.2);
-`; */
 
 export const ContactH2 = styled.h2`
 color: #fff;

@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const EducationContainer = styled.div`
   align-items: center;
-  //padding: 0 30px;
-  min-height: 100vh;
+  height: fit-content; min-height: 100vh;
   top: -80px;
   position: relative;
   z-index: 3;
@@ -24,7 +23,6 @@ export const EducationContent = styled.div`
   margin: 0 auto;
   z-index: 3;
   max-width: 1200px;
-  max-height: 1000px;
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -50,12 +48,9 @@ export const EducationH1 = styled.h1`
 export const EducationP = styled.p`
   margin-top: 4px;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
-  max-width: 300px;
-  max-height: 200px;
   text-shadow: 2px 2px 2px black;
-  //font-weight: bold;
 
   @media screen and (max-width: 768px) {
     font-size: 16px;
@@ -68,10 +63,6 @@ export const EducationP = styled.p`
 
 export const EducationWrapper = styled.div`
   z-index: 3;
-  height: 240px;
-  flex-basis: 30%;
-  -ms-flex: auto;
-  width: 500px;
   position: relative;
   margin: 10px;
   box-sizing: border-box;
@@ -91,16 +82,13 @@ export const EducationWrapper = styled.div`
 `;
 
 export const EducationCard = styled.div`
-  /* background: #fff; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   border-radius: 10px;
-  height: 240px;
-  width: 500px;
+  width: 375px;
   padding: 15px;
-  //box-shadow: 2px 2px 3px gray;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -118,16 +106,20 @@ export const EducationCard = styled.div`
 `;
 
 export const EducationIcon = styled.img`
-  max-height: 160px;
-  max-width: 160px;
+  max-height: 280px;
+    max-width: 260px;
   margin-bottom: 10px;
   box-shadow: 2px 2px 4px black;
-`;
 
-export const EducationH2 = styled.h2`
-  font-weight: bold;
-  font-size: 1em;
-  margin-bottom: 10px;
+  @media screen and (max-width: 768px) {
+    max-height: 280px;
+    max-width: 260px;
+  }
+
+  @media screen and (max-width: 480px) {
+    max-height: 240px;
+    max-width: 220px;
+  }
 `;
 
 export const InnerCard = styled.div`

@@ -12,17 +12,25 @@
   border-radius: 50%;
   border: 1px solid black;
 }
+
 .carousel-control-prev, .carousel-control-next {
   height: 2em;
   width: 2em;
-
   background-color: rgba(200, 200, 200, 0.3);
   background-size: 100%, 100%;
   border-radius: 50%;
-
-  bottom: 2px;
+  bottom: 15px;
   top: auto;
 }
+
+.carousel-control-next {
+  right: 15px;
+}
+
+.carousel-control-prev {
+  left: 15px;
+}
+
 
 .title {
   font-size: 2em;
@@ -34,7 +42,7 @@
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .carousel-indicators {
-  margin-bottom: -0.4rem;
+  margin-bottom: 0.4rem;
 }
 .carousel-indicators [data-bs-target] {
   background-color: #ffffff;

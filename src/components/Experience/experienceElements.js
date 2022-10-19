@@ -5,8 +5,6 @@ export const ExperienceContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //padding: 0 30px;
-  height: 100vh;
   top: -80px;
   position: relative;
   z-index: 1;
@@ -22,10 +20,11 @@ export const ExperienceContainer = styled.div`
 `;
 
 export const ExperienceContent = styled.div`
+  height: fit-content; min-height: 100vh;
   z-index: 3;
   max-width: 1200px;
   max-height: 1000px;
-  position: absolute;
+  position: relative;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
