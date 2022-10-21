@@ -24,6 +24,17 @@
       display: none !important;
       -webkit-appearance: none;
     }
+
+    video::-webkit-media-controls {
+      display: none !important;
+    }
+
+    video::slotted::-webkit-media-controls-container {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      -webkit-appearance: none !important;
+    }
   </style>
   <link rel="icon" href="resume.png">
   <title>Nicholas Kempkes Resume</title>
