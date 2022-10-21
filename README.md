@@ -38,7 +38,6 @@ I created this project as a way to learn showcase what I can do and to also be a
 * ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 * ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
   - NodeMailer: https://nodemailer.com
-*
 
 
 
