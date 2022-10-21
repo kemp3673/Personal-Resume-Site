@@ -1,6 +1,6 @@
 import HackReactor from '../images/HackReactor.jpeg';
-import APUS from '../images/apus.png';
-import USAF from '../images/USAF.png';
+import APUS from '../images/apus.jpg';
+import USAF from '../images/USAF.jpg';
 import Boyle from '../images/boyle.jpeg';
 
 

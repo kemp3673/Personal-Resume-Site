@@ -1,7 +1,7 @@
 import React from 'react';
 import { EducationData } from '../../Data/data.js';
 import HackReactor from '../../images/HackReactor.jpeg';
-import APUS from '../../images/apus.png';
+import APUS from '../../images/apus.jpg';
 
 import { EducationContainer, EducationH1, EducationWrapper, EducationCard, EducationIcon, EducationP, EducationContent, InnerCard } from './educationElements';
 

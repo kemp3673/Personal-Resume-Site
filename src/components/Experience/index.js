@@ -3,10 +3,10 @@ import { Carousel } from 'react-bootstrap';
 import { ExperienceContainer, ExperienceH1, ExperienceContent } from './experienceElements';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './experience.css';
-import Atelier from '../../images/Atelier.png';
-import Himalia from '../../images/Himalia.png';
-import GreenHorn from '../../images/GreenHorn.png';
-import SEIR from '../../images/SEIR.png';
+import Atelier from '../../images/Atelier.jpg';
+import Himalia from '../../images/Himalia.jpg';
+import GreenHorn from '../../images/GreenHorn.jpg';
+import SEIR from '../../images/SEIR.jpg';
 
 function Experience() {
   const [index, setIndex] = useState(0);
