@@ -66,7 +66,7 @@ const SideBar = ({ isOpen, toggle }) => {
                     >
                         Employment History
                     </SideBarLink>
-                    <SideBarLink
+                    {/* <SideBarLink
                         to="contact"
                         onClick={toggle}
                         smooth={false}
@@ -76,7 +76,7 @@ const SideBar = ({ isOpen, toggle }) => {
                         offset={-80}
                     >
                         Contact Me
-                    </SideBarLink>
+                    </SideBarLink> */}
                 </SideBarMenu>
             </SideBarWrapper>
         </SideBarContainer>

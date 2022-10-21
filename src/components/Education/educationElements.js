@@ -2,10 +2,12 @@ import styled from 'styled-components';
 
 export const EducationContainer = styled.div`
   align-items: center;
-  height: max-content; min-height: 100vh;
-  top: -80px;
+  height: fit-content;
+  min-height: 100vh;
+  /* top: -80px; */
   position: relative;
   z-index: 3;
+  padding-bottom: 0;
   :before {
     content: '';
     position: absolute;
@@ -13,16 +15,16 @@ export const EducationContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-
     background: linear-gradient(180deg, #000001 0%, #01030F 90%);
     z-index: 1;
   }
 `;
 
 export const EducationContent = styled.div`
-  height: fit-content;
+  height: 100%;
   margin: 0 auto;
   z-index: 2;
+  //top: 80px;
   max-width: 1200px;
   position: relative;
   display: flex;

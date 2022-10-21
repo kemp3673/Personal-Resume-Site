@@ -2,10 +2,13 @@ import styled from 'styled-components'
 
 
 export const HistoryContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: auto;
+  height: fit-content;
   min-height: 100vh;
-  top: -80px;
+  /* top: -80px; */
   position: relative;
   z-index: 3;
   :before {
@@ -15,7 +18,7 @@ export const HistoryContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, #585671 10%, #6A96A2 75%);
+    background: linear-gradient(180deg, #020024 10%, #6A96A2 75%);
     z-index: 1;
   }
 `;
@@ -23,6 +26,7 @@ export const HistoryContainer = styled.div`
 export const HistoryContent = styled.div`
   margin: 0 auto;
   z-index: 3;
+  height: 100%;
   max-width: 1200px;
   min-height: 100vh;
   position: relative;

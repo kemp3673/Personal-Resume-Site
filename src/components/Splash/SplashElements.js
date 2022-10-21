@@ -4,13 +4,11 @@ import styled from 'styled-components';
 export const SplashContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 0 30px;
-  top: -80px;
   height: 100vh;
   min-height: 850px;
   position: relative;
-  z-index: 1;
+  z-index: 3;
   :before {
     content: '';
     position: absolute;

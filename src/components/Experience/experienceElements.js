@@ -5,7 +5,6 @@ export const ExperienceContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: -80px;
   position: relative;
   z-index: 1;
   :before {
@@ -15,7 +14,7 @@ export const ExperienceContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, #01030F 10%, #585671 75%);
+    background: linear-gradient(180deg, #01030F 30%, #020024);
   }
 `;
 

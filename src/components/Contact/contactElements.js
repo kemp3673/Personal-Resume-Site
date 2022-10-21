@@ -1,140 +1,26 @@
 import styled from 'styled-components';
 
 
+export const ContactOuter = styled.nav`
+  //background: #101522;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+`;
+
 export const ContactContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: fit-content; min-height: 100vh;
-  top: -80px;
-  position: relative;
-  :before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: -80px;
-    background: linear-gradient(180deg, #6A96A2 10%, #2E3B52);
-    z-index: 1;
-`;
-
-export const ContactContent = styled.div`
-  z-index: 3;
-  max-width: 1200px;
-  width: 100%;
-  position: relative;
-  padding: 8px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-export const ContactH1 = styled.h1`
-  color: #fff;
-  font-size: 48px;
-  text-align: center;
-  text-shadow: 2px 2px 4px black;
-
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
-  }
-`;
-
-export const ContactP = styled.p`
-  margin-top: 24px;
-  color: #fff;
-  font-size: 1.5em;
-  text-align: center;
-  max-width: 800px;
-  max-height: 400px;
-  text-shadow: 2px 2px 4px black;
-
-  @media screen and (max-width: 768px) {
-    font-size: 1.2em;
-  }
-`;
-
-export const ContactWrapper = styled.div`
+  justify-content: space-between;
+  height: 80px;
   z-index: 1;
   width: 100%;
-  max-width: 1000px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 50px;
-  justify-content: center;
-  text-align: center;
-`;
-
-export const ContactH2 = styled.h2`
-color: #fff;
-  font-size: 36px;
-  text-align: center;
-  text-shadow: 2px 2px 4px black;
-  margin-top: 10px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-  }
-`;
-
-export const ContactProfileImage = styled.img`
-  width: 25vw;
-  max-width: 250px;
-  min-width: 150px;
-  border-radius: 10%;
-  border: 2px solid rgb(0, 0, 0);
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-`;
-
-export const ContactLogo = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  margin-top: 24px;
-  max-width: 1000px;
-`;
-
-export const ContactLink = styled.a`
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1rem;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-
-  &:hover {
-    color: #01bf71;
-    transition: 0.3s ease-in-out;
-  }
-`;
-
-export const ContactDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  flew-wrap: wrap;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 24px;
-  width: 75%;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    font-size: 18px;
-  }
-
-  @media screen and (max-width: 480px) {
-    flex-direction: column;
-    font-size: 14px;
-  }
+  padding: 0 24px;
+  max-width: 1100px;
 `;
 

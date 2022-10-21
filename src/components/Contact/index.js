@@ -1,37 +1,31 @@
-import React from 'react';
-import ProfileImage from '../../images/profile_pic.jpeg';
-import { FaGithub } from 'react-icons/fa';
-import { GrLinkedin } from 'react-icons/gr';
-import { ContactContainer, ContactH1, ContactWrapper, ContactContent, ContactH2, ContactP, ContactLogo, ContactLink, ContactProfileImage, ContactDiv } from './contactElements';
+import React, { useState, useEffect } from "react";
+import { ContactContainer, ContactOuter } from "./contactElements";
+import MessageMe from './messageButton';
+import MessageModal from './messageModal';
+
+
 
 
 const Contact = () => {
+    const [showModal, setShowModal] = React.useState(false);
+
+    const handleClick = () => {
+        setShowModal(current => !current);
+        console.log(showModal);
+    };
+
     return (
         <>
-            <ContactContainer id="contact">
-                <ContactWrapper>
-                    <ContactH1>Contact Me</ContactH1>
-                    <ContactProfileImage src={ProfileImage} />
-                </ContactWrapper>
-                <ContactWrapper>
-                    <ContactContent>
-                        <ContactDiv>
-                            <ContactH2>Phone</ContactH2>
-                            <ContactP>(218) 770-3673</ContactP>
-                        </ContactDiv>
-                        <ContactDiv>
-                            <ContactH2>Email</ContactH2>
-                            <ContactP>nicholas.kempkes@gmail.com</ContactP>
-                        </ContactDiv>
-                        <ContactH2>Websites</ContactH2>
-                        <ContactLogo>
-                            <ContactLink href="https://github.com/kemp3673"><FaGithub /></ContactLink>
-                            &nbsp;
-                            <ContactLink href="https://www.linkedin.com/in/nicholas-kempkes/"><GrLinkedin /></ContactLink>
-                        </ContactLogo>
-                    </ContactContent>
-                </ContactWrapper>
-            </ContactContainer>
+            <ContactOuter>
+                <ContactContainer>
+                    <MessageMe handleClick={ handleClick }/>
+                </ContactContainer>
+            </ContactOuter>
+            {
+                showModal === true ?
+                    <MessageModal closeModal={ handleClick }/>
+                    : null
+            }
         </>
     )
 }

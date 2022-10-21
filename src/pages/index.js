@@ -8,6 +8,7 @@ import Contact from '../components/Contact';
 import WorkHistory from '../components/WorkHistory';
 import Footer from '../components/Footer';
 
+
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,11 +21,11 @@ const Home = () => {
     <>
       <SideBar isOpen={isOpen} toggle={toggle}/>
       <NavBar toggle={toggle}/>
+      <Contact />
       <Splash />
       <Education />
       <Experience />
       <WorkHistory />
-      <Contact />
       <Footer />
     </>
   );
