@@ -49,9 +49,9 @@ export const NavLogo = styled(LinkR)`
 export const CollapsedIcons = styled.div`
   display: none;
   @media screen and (max-width: 768px) {
-    display: block;
+    display: flex;
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
