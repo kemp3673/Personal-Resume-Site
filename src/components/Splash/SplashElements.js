@@ -6,6 +6,7 @@ export const SplashContainer = styled.div`
   justify-content: center;
   padding: 0 30px;
   height: 100vh;
+ //height: calc(100vh-80px);
   min-height: 850px;
   position: relative;
   z-index: 3;
@@ -94,6 +95,8 @@ export const SplashLink = styled.a`
   &:hover {
     color: #01bf71;
     transition: 0.3s ease-in-out;
+    transform: scale(1.3);
+    filter: drop-shadow(0px 0px 15px grey);
   }
 `;
 

@@ -8,7 +8,7 @@ export const formValidation = (values) => {
       errors.message = "A message is required"
     }
     if (!values.name) {
-      errors.name = "A name is required!"
+      errors.name = "A name is required"
     }
     if (!values.email) {
       errors.email = "An Email is required"

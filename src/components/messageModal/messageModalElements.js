@@ -6,29 +6,31 @@ export const MessageModalContainer = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
-  //display: grid;
-  display: none;
   align-items: center;
   justify-content: right;
   top: 0;
   left: 0;
+  overflow-y: scroll;
   display: ${({ showModal }) => (showModal ? 'grid' : 'none')};
+
+  @media screen and (max-width: 768px) {
+    animation: 0.5s ease-in-out 0s 1 slideInDown;
+    transition: 0.3s ease-in-out;
+    background: white;
+  }
 `;
 
 export const MessageModalContent = styled.div`
   animation: 0.5s ease-out 0s 1 slideInRight;
   transition: 0.3s ease-in-out;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background: #fff;
   position: relative;
   z-index: 999;
   border-radius: 10px;
-  width: 100vw;
-  height: 50vh;
-  max-width: 400px;
-  min-width: 300px;
-  max-height: fit-content;
-  min-height: 600px;
+  width: 400px;
+  height: fit-content;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   padding: 2rem;
   color: #000;
@@ -47,9 +49,13 @@ export const MessageModalContent = styled.div`
     left: 0;
     position: fixed;
     border-radius: 0px;
-    overflow-y: scroll;
+    justify-content: center;
     animation: 0.5s ease-out 0s 1 slideInDown;
     transition: 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0);
   }
 
   @media screen and (max-width: 480px) {
@@ -60,10 +66,14 @@ export const MessageModalContent = styled.div`
     margin: 0, auto;
     top: 0;
     left: 0;
-    position: fixed;
+    position: absolute;
     border-radius: 0px;
     animation: 0.5s ease-out 0s 1 slideInDown;
     transition: 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0);
   }
 `;
 
@@ -74,8 +84,12 @@ export const MessageModalHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1 rem;
   height: fit-content;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export const MessageModalTitle = styled.h2`
@@ -91,24 +105,29 @@ export const MessageModalClose = styled.div`
   transition:transform 0.1s ease-in-out;
     &:hover {
     transform: scale(1.3);
+    color: red;
     }
 `;
 
 export const MessageModalBody = styled.div`
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  overflow-y: scroll;
   padding-top: 20px;
+  height: fit-content;
+  width: 100%;
 `;
 
 export const MessageModalForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  height: 100%;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    margin-left: 10%;
+  }
 `;
 
 export const MessageModalLabel = styled.label`
@@ -120,16 +139,18 @@ export const MessageModalInput = styled.input`
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1.5px solid #dae0e5;
 `;
 
 export const MessageModalTextArea = styled.textarea`
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1.5px solid #dae0e5;
 `;
 
 export const MessageModalButton = styled.button`

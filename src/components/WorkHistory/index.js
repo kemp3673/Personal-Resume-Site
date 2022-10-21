@@ -16,7 +16,7 @@ const WorkHistory = () => {
                   <HistoryCard>
                     <HistoryIcon src={job.image} />
                     <HistoryH2>{job.company}</HistoryH2>
-                    <HistoryH2 style={{ textAlign: 'left' }}>{job.position}</HistoryH2>
+                    <HistoryH2>{job.position}</HistoryH2>
                     <HistoryP>{job.year}</HistoryP>
                     <HistoryP>{job.description}</HistoryP>
                   </HistoryCard>

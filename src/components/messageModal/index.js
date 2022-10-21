@@ -91,7 +91,7 @@ const MessageModal = ({ toggleModal, showModal }) => {
                 <MessageModalTextArea
                   id="message"
                   name="message"
-                  rows="5"
+                  oninput="auto_grow(this)"
                   value={formValues.message}
                   placeholder="Hello! I would like to hire you for a project."
                   onChange={(e) => {handleChange(e)}}

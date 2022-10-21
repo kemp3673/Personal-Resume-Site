@@ -40,6 +40,8 @@ export const NavLogo = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     color: #01bf71;
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 15px grey);
   }
   `;
 
@@ -58,6 +60,7 @@ export const CollapsedIcons = styled.div`
     &:hover {
     transition: all 0.2s ease-in-out;
     color: #01bf71;
+    filter: drop-shadow(0px 0px 15px grey);
   }
   }
 `;
@@ -90,6 +93,8 @@ export const NavLinks = styled(LinkS)`
   &:hover {
     transition: all 0.2s ease-in-out;
     color: #01bf71;
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 15px grey);
   }
   &.active {
     border-bottom: 3px solid #01bf71;

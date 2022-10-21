@@ -5,8 +5,6 @@ export const ContactButton = styled.button`
     white-space: nowrap;
     max-width: 100%;
     max-height: 100%;
-    //padding: 12px 30px;
-    /* color: #fff; */
     font-size: 16px;
     outline: none;
     border: none;
@@ -19,7 +17,6 @@ export const ContactButton = styled.button`
     &:hover {
     transform: scale(1.3);
     }
-    /* animation: blinker 4s linear infinite; */
 `;
 
 export const ContactLink = styled.a`
