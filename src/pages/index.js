@@ -7,21 +7,28 @@ import Experience from '../components/Experience';
 import Contact from '../components/Contact';
 import WorkHistory from '../components/WorkHistory';
 import Footer from '../components/Footer';
+import MessageModal from '../components/messageModal';
 
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showModal, setShowModal] = React.useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
+  const toggleModal = () => {
+      console.log('close')
+      setShowModal(current => !current);
+  };
 
   return (
     <>
       <SideBar isOpen={isOpen} toggle={toggle}/>
       <NavBar toggle={toggle}/>
-      <Contact />
+      <Contact toggleModal={toggleModal} showModal={showModal} />
+      <MessageModal toggleModal={ toggleModal }  showModal={ showModal }/>
       <Splash />
       <Education />
       <Experience />

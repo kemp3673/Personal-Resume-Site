@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import $ from 'jquery';
 import {CgClose} from 'react-icons/cg';
 import { formValidation } from './formValidation';
 import { MessageModalContainer, MessageModalWrapper, MessageModalContent, MessageModalHeader, MessageModalTitle, MessageModalClose, MessageModalBody, MessageModalForm, MessageModalLabel, MessageModalInput, MessageModalTextArea, MessageModalButton, Error } from './messageModalElements';
 
-const MessageModal = ({ closeModal }) => {
+const MessageModal = ({ toggleModal, showModal }) => {
 
   const formDefault = {message: "", name: "", email: ""};
   const [formValues, setFormValues] = useState(formDefault);
@@ -33,8 +35,8 @@ const MessageModal = ({ closeModal }) => {
         "name": `${formValues.name}`,
         "email": `${formValues.email}`,
       }
-      postRequests(body)
-      closeModal();
+      sendEMail(body)
+      toggleModal();
     }
   }, [canSubmit])
 
@@ -48,14 +50,20 @@ const MessageModal = ({ closeModal }) => {
       })
   }
 
+  const handleModalClose = (e) => {
+    if (!$(e.target).closest("#modal, .contactButton").length) {
+      toggleModal();
+    };
+  }
+
   return (
     <>
-      <MessageModalContainer>
+      <MessageModalContainer onClick={(e) => handleModalClose(e)} toggleModal={ toggleModal } showModal={ showModal }>
         <MessageModalWrapper>
-          <MessageModalContent>
+          <MessageModalContent id="modal">
             <MessageModalHeader>
             <MessageModalTitle>Contact Me</MessageModalTitle>
-            <MessageModalClose onClick={() => closeModal()}><CgClose/></MessageModalClose>
+            <MessageModalClose onClick={() => toggleModal()}><CgClose/></MessageModalClose>
             </MessageModalHeader>
             <MessageModalBody>
               <MessageModalForm>

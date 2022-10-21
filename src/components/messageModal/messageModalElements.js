@@ -6,35 +6,28 @@ export const MessageModalContainer = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
-  display: grid;
+  //display: grid;
+  display: none;
   align-items: center;
   justify-content: right;
   top: 0;
   left: 0;
-  transition: 0.3s ease-in-out;
-`;
-
-export const MessageModalWrapper = styled.div`
-  /* color: red;
-  min-height: 300px;
-  max-height: 1000px;
-  height: 60%;
-  min-width: 300px;
-  max-width: 600px;
-  width: 100%; */
+  display: ${({ showModal }) => (showModal ? 'grid' : 'none')};
 `;
 
 export const MessageModalContent = styled.div`
+  animation: 0.5s ease-out 0s 1 slideInRight;
+  transition: 0.3s ease-in-out;
   display: grid;
   background: #fff;
   position: relative;
   z-index: 999;
   border-radius: 10px;
-  width: 30vw;
+  width: 100vw;
   height: 50vh;
   max-width: 400px;
   min-width: 300px;
-  max-height: 800px;
+  max-height: fit-content;
   min-height: 600px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   padding: 2rem;
@@ -43,24 +36,38 @@ export const MessageModalContent = styled.div`
   font-size: 1rem;
   margin-right: 20px;
 
+
   @media screen and (max-width: 768px) {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+    max-width: 100vw;
     margin: 0, auto;
     top: 0;
     left: 0;
     position: fixed;
+    border-radius: 0px;
+    overflow-y: scroll;
+    animation: 0.5s ease-out 0s 1 slideInDown;
+    transition: 0.3s ease-in-out;
   }
 
   @media screen and (max-width: 480px) {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+    max-width: 100vw;
     margin: 0, auto;
     top: 0;
     left: 0;
-    position: absolute;
-
+    position: fixed;
+    border-radius: 0px;
+    animation: 0.5s ease-out 0s 1 slideInDown;
+    transition: 0.3s ease-in-out;
   }
+`;
+
+export const MessageModalWrapper = styled.div`
 `;
 
 export const MessageModalHeader = styled.div`
@@ -81,6 +88,10 @@ export const MessageModalTitle = styled.h2`
 export const MessageModalClose = styled.div`
   cursor: pointer;
   font-size: 1.5rem;
+  transition:transform 0.1s ease-in-out;
+    &:hover {
+    transform: scale(1.3);
+    }
 `;
 
 export const MessageModalBody = styled.div`
@@ -89,6 +100,8 @@ export const MessageModalBody = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  overflow-y: scroll;
+  padding-top: 20px;
 `;
 
 export const MessageModalForm = styled.form`

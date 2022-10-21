@@ -1,31 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { ContactContainer, ContactOuter } from "./contactElements";
 import MessageMe from './messageButton';
-import MessageModal from './messageModal';
 
 
 
 
-const Contact = () => {
-    const [showModal, setShowModal] = React.useState(false);
-
-    const handleClick = () => {
-        setShowModal(current => !current);
-        console.log(showModal);
-    };
+const Contact = ({showModal, toggleModal}) => {
 
     return (
         <>
-            <ContactOuter>
+            <ContactOuter id="contact">
                 <ContactContainer>
-                    <MessageMe handleClick={ handleClick }/>
+                    <MessageMe toggleModal={ toggleModal }/>
                 </ContactContainer>
             </ContactOuter>
-            {
-                showModal === true ?
-                    <MessageModal closeModal={ handleClick }/>
-                    : null
-            }
         </>
     )
 }

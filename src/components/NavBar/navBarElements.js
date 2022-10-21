@@ -15,6 +15,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: top 0.3s ease-in-out;
 `;
 export const NavBarContainer = styled.div`
   display: flex;

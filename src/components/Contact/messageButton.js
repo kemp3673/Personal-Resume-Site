@@ -1,11 +1,11 @@
 import React from 'react';
 import { ContactButton, ContactLink } from './messageButtonElements';
 import { HiOutlineMailOpen } from 'react-icons/hi';
-const messageButton = ({ handleClick }) => {
+const messageButton = ({ toggleModal }) => {
   return (
     <>
-      <ContactButton>
-        <ContactLink onClick={() => handleClick()}><HiOutlineMailOpen size={70}/></ContactLink>
+      <ContactButton className="contactButton">
+        <ContactLink onClick={() => toggleModal()}><HiOutlineMailOpen size={70}/></ContactLink>
       </ContactButton>
     </>
   )

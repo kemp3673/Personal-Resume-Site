@@ -4,11 +4,12 @@ import { Link as LinkS } from 'react-scroll';
 import { FaTimes } from 'react-icons/fa';
 
 export const SideBarContainer = styled.aside`
+  animation: 1s ease-out 0s 1 slideInLeft;
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, #437C8B 30%, #2E3B52 100%);
+  background: linear-gradient(180deg, #437C8B 30%, #2E3B52 80%);
   display: grid;
   align-items: center;
   top: 0;
