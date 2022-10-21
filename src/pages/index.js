@@ -19,7 +19,6 @@ const Home = () => {
   };
 
   const toggleModal = () => {
-      console.log('close')
       setShowModal(current => !current);
   };
 
