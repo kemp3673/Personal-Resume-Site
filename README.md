@@ -22,18 +22,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+I created this project as a way to learn showcase what I can do and to also be a more unique looking resume. The project helped me learn a lot more than the knowdedge I had started with, especially in regards to how to take into account the dynamic aspects of a webpage with how it responds to different device types. 
 
 
 
@@ -50,8 +39,6 @@ Use the `BLANK_README.md` to get started.
 * ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
   - NodeMailer: https://nodemailer.com
 *
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -91,11 +78,6 @@ _Below is an example of how you can instruct your audience on installing and set
     - Aditional, the carousel component I have used I am populating with images to showcase previous projects.
  8. Update src/Video with any video you wish to use.
     - I got the current video from https://www.pexels.com/videos/ which contains royalty-free videos. 
- 
- 
-    
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -104,8 +86,6 @@ _Below is an example of how you can instruct your audience on installing and set
 
 This project was created as an example of work I can perform as well as a more interesting way to look at my resume. 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- CONTACT -->
 ## Contact
@@ -113,5 +93,3 @@ This project was created as an example of work I can perform as well as a more i
 Nicholas Kempkes - nicholas.kempkes@gmail.com
 
 Project Link: https://github.com/kemp3673/Personal-Resume-Site
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
