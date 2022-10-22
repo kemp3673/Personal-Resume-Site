@@ -5,9 +5,8 @@ export const SplashContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 0 30px;
-  height: 100vh;
- //height: calc(100vh-80px);
-  min-height: 850px;
+  height: fit-content;
+  min-height: 100vh;
   position: relative;
   z-index: 3;
   :before {
@@ -30,6 +29,7 @@ export const SplashContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  top: -80px;
 `;
 
 export const SplashH1 = styled.h1`

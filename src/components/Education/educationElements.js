@@ -24,7 +24,6 @@ export const EducationContent = styled.div`
   height: 100%;
   margin: 0 auto;
   z-index: 2;
-  //top: 80px;
   max-width: 1200px;
   position: relative;
   display: flex;
@@ -110,15 +109,10 @@ export const EducationCard = styled.div`
 
 export const EducationIcon = styled.img`
   max-height: 280px;
-    max-width: 260px;
+  max-width: 260px;
   margin-bottom: 10px;
   box-shadow: 2px 2px 4px black;
   margin-top: 10px;
-
-  @media screen and (max-width: 768px) {
-    max-height: 280px;
-    max-width: 260px;
-  }
 
   @media screen and (max-width: 480px) {
     max-height: 240px;

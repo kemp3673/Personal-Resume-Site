@@ -34,7 +34,7 @@ const Footer = () => {
                   exact='true'
                   offset={-80}
                 >Employment History</FooterLink>
-                <FooterLink href=''>Additional Websites Created</FooterLink>
+                <FooterLink href=''>Additional Websites Created [Coming Soon]</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
