@@ -3,33 +3,7 @@ import { Link } from "react-scroll";
 
 export const FooterContainer = styled.footer`
   background-color: #101522;
-  /* height: 20vh;
-  top: -80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  position: relative;
-  z-index: 3; */
 `;
-
-
-// export const FooterContainer = styled.div`
-//   background-color: #101522;
-//   height: 20vh;
-//   display: flex;
-//   position: relative;
-//   /* :before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background: linear-gradient(180deg, #000001 0%, #01030F 90%);
-//     z-index: 1;
-//   } */
-// `;
 
 export const FooterWrap = styled.div`
   padding: 48px 24px;
@@ -82,7 +56,7 @@ export const FooterLinkTitle = styled.h1`
   font-weight: bold;
 `;
 
-export const FooterLink = styled(Link)`
+export const FooterLink = styled.a`
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;

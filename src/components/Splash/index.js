@@ -17,9 +17,9 @@ const Splash = () => {
         Hello! I am a javascript developer that enjoys solving problems and learning. I spent six years in the military as a Geospatial Analyst before pursuing my education after my discharge. I love all things tech and can spend hours geeking out over new technologies. I am originally from Minnesota but have spent the last 10+ years moving around the country and currently reside near Nashville, TN. For hobbies, I enjoy resin 3D printing and occasionally playing video games as time allows.
         </SplashP>
         <SplashLogo>
-          <SplashLink href="https://github.com/kemp3673"><FaGithub /></SplashLink>
+          <SplashLink href="https://github.com/kemp3673" target="_blank"><FaGithub /></SplashLink>
           &nbsp;
-          <SplashLink href="https://www.linkedin.com/in/nicholas-kempkes/"><GrLinkedin /></SplashLink>
+          <SplashLink href="https://www.linkedin.com/in/nicholas-kempkes/" target="_blank"><GrLinkedin /></SplashLink>
         </SplashLogo>
       </SplashContent>
     </SplashContainer>
