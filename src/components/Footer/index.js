@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink } from './footerElements';
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterExternalLink } from './footerElements';
 
 const Footer = () => {
   return (
@@ -34,7 +34,7 @@ const Footer = () => {
                   exact='true'
                   offset={-80}
                 >Employment History</FooterLink>
-                <FooterLink href="http://www.wagsandwalkies.dog/" target="_blank">Additional Websites Created</FooterLink>
+                <FooterExternalLink href="http://www.wagsandwalkies.dog/" target="_blank">Additional Websites Created</FooterExternalLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
