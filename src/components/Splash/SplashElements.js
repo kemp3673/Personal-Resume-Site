@@ -24,6 +24,7 @@ export const SplashContainer = styled.div`
 export const SplashContent = styled.div`
   z-index: 3;
   max-width: 1200px;
+  height: fit-content;
   position: relative;
   padding: 8px 24px;
   display: flex;
@@ -53,7 +54,7 @@ export const SplashP = styled.p`
   font-size: 1.2em;
   text-align: center;
   max-width: 800px;
-  max-height: 400px;
+  height: fit-content;
   text-shadow: 2px 2px 4px black;
 
   @media screen and (max-width: 768px) {

@@ -162,7 +162,7 @@ export const MessageModalButton = styled.button`
   cursor: pointer;
   transition: 0.2s ease-in-out;
   &:hover {
-    background: #fff;
+    background: #01bf71;
     color: #000;
     border: 1px solid #000;
   }
