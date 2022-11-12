@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path:path.resolve(__dirname, "public"),
   },
+
   module: {
     rules: [
       {
@@ -84,15 +85,5 @@ module.exports = {
         ]
     }
     ]
-  },
-  devtool: "eval-cheap-module-source-map",
-  devServer: {
-    // [static] config for how what to serve
-    static: {
-      directory: path.join(__dirname, "public"),
-    },
-    compress: true,
-    // [port] what port on our local machine to run the dev server
-    port: 3000,
-  },
+  }
 };
