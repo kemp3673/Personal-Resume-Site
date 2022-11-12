@@ -42,6 +42,7 @@ const NavBar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <NavLinks
+                aria-label="Education Link"
                 to="education"
                 smooth={false}
                 spy={true}
@@ -52,6 +53,7 @@ const NavBar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                aria-label="Experience Link"
                 to="experience"
                 smooth={false}
                 spy={true}
@@ -62,6 +64,7 @@ const NavBar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                aria-label="Employment Link"
                 to="employmentHistory"
                 smooth={false}
                 spy={true}

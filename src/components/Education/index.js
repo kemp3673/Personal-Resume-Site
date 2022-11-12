@@ -18,7 +18,7 @@ const Education = () => {
         return (
           <EducationWrapper key={`${education.degree}${education.year}`}>
             <EducationCard>
-              <EducationIcon src={education.image} />
+              <EducationIcon src={education.image} alt={ education.degree + education.year }/>
               <InnerCard>
                 <EducationP>{education.degree}</EducationP>
                 <EducationP>{education.year}</EducationP>

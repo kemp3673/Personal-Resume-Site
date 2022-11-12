@@ -14,7 +14,7 @@ const WorkHistory = () => {
               return (
                 <HistoryWrapper key={`${job.company}${job.year}`}>
                   <HistoryCard>
-                    <HistoryIcon src={job.image} />
+                    <HistoryIcon src={job.image} alt={ job.position + "at" +  job.company}/>
                     <HistoryH2>{job.company}</HistoryH2>
                     <HistoryH2>{job.position}</HistoryH2>
                     <HistoryP>{job.year}</HistoryP>
